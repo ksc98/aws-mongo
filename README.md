@@ -1,7 +1,7 @@
 # aws-mongo
 Goal: Host a MongoDB on AWS and interact with it from your local computer
 
-
+---
 ## Setting up AWS
 1. Create a key/pair on AWS Dashboard
 2. Put key.pem in ~/.aws/
