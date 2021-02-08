@@ -22,7 +22,7 @@ Update packages: \
 Install Docker: \
 `sudo apt-get install docker.io`
 
-Install docker-compose (for container orchestration):
+Install docker-compose (for container orchestration): \
 `sudo apt-get install docker-compose`
 
 ## Start MongoDB container
