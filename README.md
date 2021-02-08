@@ -41,20 +41,22 @@ Explanation: \
 
 `ssh -i /path/to/key.pem user@my-instance-public-dns-name -Nf -L 27018:localhost:27017`
 
-Authenticate using your private key
+Authenticate using your private key:
 
 > `ssh -i /path/to/key.pem user@my-instance-public-dns-name`
 
 
+Run this command in background:
+> `-f`
 
-`-f` \
--> Run this command in background
+Do not execute a remote command (we only want to create an SSH tunnel):
 
-`-N` \
--> Do not execute a remote command (we only want to create an SSH tunnel)
+> `-N`
 
-`-L 27018:localhost:27017` \
--> Route traffic from local_socket (27018) to remote_socket (27017)
+Route traffic from local_socket (27018) to remote_socket (27017):
+
+> `-L 27018:localhost:27017`
+
 
 
 ## Interact with the MongoDB interactively
