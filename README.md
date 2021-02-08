@@ -7,9 +7,11 @@ Goal: Host a MongoDB on AWS and interact with it from your local computer
 
 ## SSH into EC2 instance
 
-Format: `ssh -i /path/to/key.pem user@my-instance-public-dns-name`
+Format: \
+`ssh -i /path/to/key.pem user@my-instance-public-dns-name`
 
-Example: `ssh -i ~/.aws/key.pem ubuntu@ec2-50-18-42-4.us-west-1.compute.amazonaws.com`
+Example: \
+`ssh -i ~/.aws/key.pem ubuntu@ec2-50-18-42-4.us-west-1.compute.amazonaws.com`
 
 
 ## Install necessary packages
