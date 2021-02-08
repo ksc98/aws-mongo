@@ -27,7 +27,9 @@ Install docker-compose (for container orchestration): \
 
 ## Start MongoDB container
 Now, we need to start the Mongo container. \
+
 To do this, we will pull from the latest Docker Mongo image: \
+
 `docker run --name mongodb -d mongo:latest`
 
 ## Create an SSH tunnel from (local -> AWS)
