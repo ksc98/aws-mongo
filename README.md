@@ -32,7 +32,7 @@ To do this, we will pull the latest Docker Mongo image and run it:
 
 `docker run --name mongodb -d mongo:latest`
 
-Explanation of command: \
+Explanation: \
 `--name {}`: name of container \
 `-d` (detach): run the container in background 
 
@@ -41,7 +41,7 @@ Explanation of command: \
 
 `ssh -i /path/to/key.pem user@my-instance-public-dns-name -Nf -L 27018:localhost:27017`
 
-Explanation of command: \
+Explanation: \
 `ssh -i /path/to/key.pem user@my-instance-public-dns-name`: Authenticate using your private key \
 `-f`: Run this command in background \
 `-N`: Do not execute a remote command (we only want to create an SSH tunnel) \
