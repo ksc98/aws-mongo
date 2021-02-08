@@ -37,9 +37,7 @@ To do this, we need to pull the latest Mongo image from Docker Hub.
 
 > `docker run --name mongodb -d mongo:latest`
 
-
-
-
+---
 
 #### Explanation:
 Name of container:
