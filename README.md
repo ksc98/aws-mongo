@@ -1,9 +1,11 @@
 # aws-mongo
 Goal: Host a MongoDB on AWS and interact with it from your local computer
 
+
 ## Setting up AWS
 1. Create a key/pair on AWS Dashboard
 2. Put key.pem in ~/.aws/
+
 
 ## SSH into EC2 instance
 Format:
@@ -35,6 +37,7 @@ To do this, we need to pull the latest Mongo image from Docker Hub.
 
 > `docker run --name mongodb -d mongo:latest`
 
+
 #### Explanation:
 Name of container:
 > `--name container_name`
@@ -44,24 +47,26 @@ Run the container in background ("detach"):
 
 
 ## Create an SSH tunnel from (local -> AWS)
+Command:
+> `ssh -i /path/to/key.pem user@my-instance-public-dns-name -Nf -L 27018:localhost:27017`
+
+#### Explanation:
 Authenticate using your private key:
 > `ssh -i /path/to/key.pem user@my-instance-public-dns-name`
 
-Run this command in background:
+Run command in background:
 > `-f`
 
-Do not execute a remote command (we only want to create an SSH tunnel):
+Do not execute a remote command (we only want to create an SSH tunnel, don't want to execute separate commands on server):
 > `-N`
 
-Route traffic from local_socket (27018) to remote_socket (27017):
+Route traffic from local_socket (27018) to remote_socket (server prot 27017 is the port Mongo runs on):
 > `-L 27018:localhost:27017`
 
-Final command:
-> `ssh -i /path/to/key.pem user@my-instance-public-dns-name -Nf -L 27018:localhost:27017`
 
 ## Load data into MongoDB
 Populate db with data (example: drop .csv into db)
-> `mongoimport --type csv -d name_of_db -c name_of_collection --headerline --drop file_to_drop.csv --port mongo_port`
+> `mongoimport --type csv -d name_of_db -c name_of_collection --headerline --drop data_file.csv --port local_port`
 
 
 ## Interact with the MongoDB interactively
