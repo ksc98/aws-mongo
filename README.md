@@ -43,7 +43,7 @@ Explanation: \
 
 Explanation:
 
-`ssh -i /path/to/key.pem user@my-instance-public-dns-name` \
+> `ssh -i /path/to/key.pem user@my-instance-public-dns-name` \
 -> Authenticate using your private key
 
 `-f` \
