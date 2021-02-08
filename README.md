@@ -60,7 +60,8 @@ Final command:
 > `ssh -i /path/to/key.pem user@my-instance-public-dns-name -Nf -L 27018:localhost:27017`
 
 ## Load data into MongoDB
-
+Populate db with data (example: drop .csv into db)
+> `mongoimport --type csv -d name_of_db -c name_of_collection --headerline --drop file_to_drop.csv --port mongo_port`
 
 
 ## Interact with the MongoDB interactively
@@ -78,7 +79,7 @@ Select a database (to browser further):
 > `use [database_name]`
 
 Show collections (a db can have multiple "collections" of data):
-> 'show collections'
+> `show collections`
 
 
 ## Enable monitoring/stats for MongoDB (free)
