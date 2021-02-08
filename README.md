@@ -17,8 +17,16 @@ Example: `ssh -i ~/.aws/key.pem ubuntu@ec2-50-18-42-4.us-west-1.compute.amazonaw
 Update packages: \
 `sudo apt-get update && sudo apt-get upgrade`
 
+Install Docker: \
+`sudo apt-get install docker.io`
+
+Install docker-compose (for container orchestration):
+`sudo apt-get install docker-compose`
 
 ## Start MongoDB container
+Now, we need to start the Mongo container. \
+To do this, we will pull from the latest Docker Mongo image: \
+`docker run --name mongodb -d mongo:latest`
 
 ## Create an SSH tunnel from (local -> AWS)
 
