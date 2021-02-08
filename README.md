@@ -41,11 +41,11 @@ Explanation: \
 
 `ssh -i /path/to/key.pem user@my-instance-public-dns-name -Nf -L 27018:localhost:27017`
 
-Explanation:
+-> Authenticate using your private key
 
 > `ssh -i /path/to/key.pem user@my-instance-public-dns-name`
 
--> Authenticate using your private key
+
 
 `-f` \
 -> Run this command in background
