@@ -27,9 +27,9 @@ Install docker-compose (for container orchestration):
 
 ## Start MongoDB container
 Now, we need to start the Mongo container. \
-To do this, we will pull the latest Docker Mongo image and run it:
+To do this, we need to pull the latest Mongo image from Docker Hub:
 
-`docker run --name mongodb -d mongo:latest`
+> `docker run --name mongodb -d mongo:latest`
 
 Explanation:
 
