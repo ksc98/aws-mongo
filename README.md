@@ -39,8 +39,6 @@ Explanation: \
 
 ## Create an SSH tunnel from (local -> AWS)
 
-`ssh -i /path/to/key.pem user@my-instance-public-dns-name -Nf -L 27018:localhost:27017`
-
 Authenticate using your private key:
 
 > `ssh -i /path/to/key.pem user@my-instance-public-dns-name`
@@ -57,6 +55,8 @@ Route traffic from local_socket (27018) to remote_socket (27017):
 
 > `-L 27018:localhost:27017`
 
+Final command:
+> `ssh -i /path/to/key.pem user@my-instance-public-dns-name -Nf -L 27018:localhost:27017`
 
 
 ## Interact with the MongoDB interactively
