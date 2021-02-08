@@ -1,18 +1,17 @@
 # aws-mongo
+Goal: Host a MongoDB on AWS and interact with it from your local computer
 
+## Setting up AWS
 
-# Setting up AWS
+## Install necessary packages
 
-# Install necessary packages
+## Start MongoDB container
 
+## Create an SSH tunnel from (local -> AWS)
 
-# Start MongoDB container
+## Interact with the MongoDB interactively
 
-# Create an SSH tunnel from (local -> AWS)
+## Load data into MongoDB
 
-# Interact with the MongoDB interactively
-
-# Load data into MongoDB
-
-# Enable monitoring/stats for MongoDB (free)
+## Enable monitoring/stats for MongoDB (free)
 
