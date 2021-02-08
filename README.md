@@ -34,7 +34,7 @@ To do this, we will pull the latest Docker Mongo image and run it:
 
 Explanation of command: \
 `--name {}`: name of container \
-`-d` (detach): run the container in background \
+`-d` (detach): run the container in background 
 
 
 ## Create an SSH tunnel from (local -> AWS)
