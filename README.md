@@ -61,7 +61,8 @@ Final command:
 
 ## Load data into MongoDB
 Populate db with data (example: drop .csv into db)
-> `mongoimport --type csv -d name_of_db -c name_of_collection \\
+> `mongoimport --type csv -d name_of_db -c name_of_collection
+
 --headerline --drop file_to_drop.csv --port mongo_port`
 
 
