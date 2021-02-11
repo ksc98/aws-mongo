@@ -25,10 +25,6 @@ Install Docker:
 
 Install docker-compose (for container orchestration):
 > `sudo apt-get install docker-compose`
-
-### On local:
-Install mongo-cli:
-> `brew install mongodb-community-shell`
 ---
 
 ## Start MongoDB container
@@ -67,6 +63,11 @@ Route traffic from local_socket (27018) to remote_socket (server prot 27017 is t
 Populate db with data (example: drop .csv into db)
 > `mongoimport --type csv -d name_of_db -c name_of_collection --headerline --drop data_file.csv --port local_port`
 ---
+
+
+### On local:
+Install mongo-cli:
+> `brew install mongodb-community-shell`
 
 ## Interact with the MongoDB interactively
 Now that we have the local port routed to the server, we can simply just connect to local port 27018. \
