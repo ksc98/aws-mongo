@@ -26,12 +26,14 @@ Install Docker:
 Install docker-compose (for container orchestration):
 > `sudo apt-get install docker-compose`
 ---
+## Create local directory to store Mongo data
+>  `mkdir mongo_data`
 
 ## Start MongoDB container
 Now, we need to start the Mongo container. \
 To do this, we need to pull the latest Mongo image from Docker Hub.
 
-> `docker run --name mongodb -d mongo:latest`
+> `docker run --name mongodb -d -v mongo_data:/data -p 27017:27017 mongo:latest`
 
 #### Explanation:
 Name of container:
